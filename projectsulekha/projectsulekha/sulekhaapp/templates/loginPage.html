@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<title></title>
+</head>
+<body ng-app="myApp" ng-controller="loginCtrl">
+<div class="container" style="text-align:center">
+	<form name="myForm">
+<p>First Name:
+<input name="myName" ng-model="firName" required>
+<span ng-show="myForm.myName.$touched && myForm.myName.$invalid">The first name is required.</span>
+<br>
+Last Name:<input name="myName1" ng-model="lastName" required>
+<span ng-show="myForm.myName1.$touched && myForm.myName1.$invalid">The last name is required.</span>
+<br>
+
+</p>
+<input type="button" name="btn" value="LogIn">
+<a href="#" ng-click="register()">Create an Account?</a>
+</form>
+</div>
+<br>
+<div class="container" style="text-align:center" ng-show=registerDiv>
+	<form name="myForm1">
+<p>First Name:
+<input name="myName1" ng-model="firName" required>
+<span ng-show="myForm1.myName1.$touched && myForm1.myName1.$invalid">The first name is required.</span>
+<br>
+Last Name:<input name="myName2" ng-model="lastName" required>
+<span ng-show="myForm1.myName2.$touched && myForm1.myName2.$invalid">The last name is required.</span>
+<br>
+Email:<input type="email" name="email1" ng-model="email" required>
+<span ng-show="myForm1.email1.$touched && myForm1.email1.$invalid">The email is required.</span>
+<span ng-show="myForm1.email1.$error.email1 && myForm1.email1.$invalid">Enter valid email</span>
+<br>
+</p>
+<input type="button" name="btn" value="Register">
+</form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+<script src="loginPage.js"></script>
+</body>
+</html>
