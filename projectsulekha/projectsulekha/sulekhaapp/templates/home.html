@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html ng-app="guitarapp">
+<head>
+	<title>Pro-Sulekha.com</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style1.css">
+</head>
+<body style="background: linear-gradient(-90deg, #f2f3f4,#a3bbe0);">
+	
+		<div class="row logohead1" >
+			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
+				<img src="Images/logo.jpg" class="imgstyle">
+			</div>
+			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
+				<p class="txt">Pro-Sulekha.com</p>
+			</div>
+			<div class="col-lg-3 col-md-1 col-sm-1 col-xs-4">
+			</div>
+			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-4">
+				<i class="fa fa-sign-in fa-2x" style="margin-top: 15px;" aria-hidden="true"></i>
+				<button class="btn btn-info marg">Login</button>
+			</div>
+			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-4">
+				<i class="fa fa-user-plus fa-2x" style="margin-top: 15px;" aria-hidden="true"></i>
+				<button class="btn btn-info marg">Sign UP</button>
+			</div>
+			<div class="col-lg-3 col-md-1 col-sm-1 col-xs-4">
+				<i class="fa fa-upload fa-2x" style="margin-top: 15px;" aria-hidden="true"></i>
+				<button class="btn btn-info marg">Post Your Requirements</button>
+			</div>
+		</div>
+
+		<div class="nav">
+			<div class="row">
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4"></div>
+				<div class="col-lg-1 col-md-1 col-sm-7 col-xs-5"><a href="#" style="font-size: 25px;">Rentals</a></div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4"></div>
+				<div class="col-lg-1 col-md-1 col-sm-3 col-xs-5">
+					<a href="#"  style="font-size: 25px;">Jobs</a>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4"></div>
+				<div class="col-lg-1 col-md-1 col-sm-7 col-xs-5"><a href="#" style="font-size: 25px;">Roommates</a></div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4"></div>
+				<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5"><a href="#" style="font-size: 25px;">Day-Care</a></div>
+				<div class="hidden-lg hidden-md col-sm-1 col-xs-4"></div>
+				<div class="col-lg-1 col-md-1 col-sm-3 col-xs-5"><a href="#" style="font-size: 25px;">Services</a></div>
+				</div>
+			</div>
+
+			<div class="row logohead" style="margin-top: 10px; height:300px; ">
+					<div class="col-lg-7 col-md-1 col-sm-1 col-xs-4">
+						<p class="txt">SIMPLEST WAY TO DISCOVER</p>
+					</div>
+					<div class="col-lg-6 col-md-1 col-sm-1 col-xs-4">
+					 	<div class="dropdown">
+  							<button class="dropbtn">ALL</button>
+  							<div class="dropdown-content">
+							    <a href="#">Rentals</a>
+							    <a href="#">Roomservice</a>
+					
+							    <a href="#">Day-care</a>
+							    <a href="#">service</a>
+  						    </div>
+						</div>
+						<input type="text" class="ip" name="search" placeholder="Enter the keywords to search" >
+					</div>
+					<div class="col-lg-6 col-md-1 col-sm-1 col-xs-4">
+						<input type="text" class="ip" name="location" placeholder="Enter the location" >
+						<button class="btn btn-info " style="height:45px; ">Search</button>
+					</div>
+					<div class="col-lg-12"></div>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-6" style="margin-top: 50px;">
+					<div class="animdiv" >
+						<p class="anim">Your search ends here...</p></div></div>
+		</div>
+
+		<div class="row logohead" style="margin-top: 10px;">
+					<div class="col-lg- col-md-1 col-sm-1 col-xs-4">
+					
+					</div>
+
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
+						<img src="Images/rental-icon.png">
+						Rentals
+					</div>
+					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
+					</div>
+
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
+				<img src="Images/roommate-icon.png">
+				Roommates
+				</div>
+				<div class="col-lg-4 col-md-1 col-sm-1 col-xs-4">
+				</div>
+
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
+				<img src="Images/daycare-icon.png">
+				Day-Care
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
+				</div>
+
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
+				<img src="Images/local-service-icon.png">
+				Services
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
+				</div>
+			</div>
+			<div ui-view></div>
+
+			<div class="row logohead1" style="margin-top: 15px;" >
+			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
+				<img src="Images/logo.jpg" class="imgstyle">
+			</div>
+			<div class="col-lg-4 col-md-1 col-sm-1 col-xs-4">
+				<a href="#"  style="font-size: 25px;">About US</a>
+			</div>
+			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-4">
+				<a href="#"  style="font-size: 25px;">Connect With US</a>
+				<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-twitter fa-2x" style="margin-left: 20px;" aria-hidden="true"></i>
+				<i class="fa fa-instagram fa-2x" style="margin-left: 20px;" aria-hidden="true"></i>
+				<i class="fa fa-google-plus fa-2x" style="margin-left: 20px;" aria-hidden="true"></i>
+			</div>
+
+			<div class="col-lg-3">
+			
+			</div>
+
+			<div class="col-lg-3 col-md-1 col-sm-1 col-xs-4" style="margin-left: 160px;">
+				<a href="#"  style="font-size: 25px;">Contact US</a>
+			</div>
+			
+		</div>
+	
+
+</body>
+</html>
