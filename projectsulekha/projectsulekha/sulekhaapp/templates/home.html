@@ -1,16 +1,17 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html ng-app="guitarapp">
 <head>
 	<title>Pro-Sulekha.com</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="CSS/style1.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
 </head>
 <body style="background: linear-gradient(-90deg, #f2f3f4,#a3bbe0);">
 	
 		<div class="row logohead1" >
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-				<img src="Images/logo.jpg" class="imgstyle">
+				<img src="{% static 'Logos/logo.jpg' %}" class="imgstyle">
 			</div>
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
 				<p class="txt">Pro-Sulekha.com</p>
@@ -82,28 +83,28 @@
 					</div>
 
 					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
-						<img src="Images/rental-icon.png">
+						<img src="{% static 'Logos/rental-icon.png' %}">
 						Rentals
 					</div>
 					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
 					</div>
 
 				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
-				<img src="Images/roommate-icon.png">
+				<img src="{% static 'Logos/roommate-icon.png' %}">
 				Roommates
 				</div>
 				<div class="col-lg-4 col-md-1 col-sm-1 col-xs-4">
 				</div>
 
 				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
-				<img src="Images/daycare-icon.png">
+				<img src="{% static 'Logos/daycare-icon.png' %}">
 				Day-Care
 				</div>
 				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
 				</div>
 
 				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
-				<img src="Images/local-service-icon.png">
+				<img src="{% static 'Logos/local-service-icon.png' %}">
 				Services
 				</div>
 				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
@@ -113,7 +114,7 @@
 
 			<div class="row logohead1" style="margin-top: 15px;" >
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-				<img src="Images/logo.jpg" class="imgstyle">
+				<img src="{% static 'Logos/logo.jpg' %}"  class="imgstyle">
 			</div>
 			<div class="col-lg-4 col-md-1 col-sm-1 col-xs-4">
 				<a href="#"  style="font-size: 25px;">About US</a>

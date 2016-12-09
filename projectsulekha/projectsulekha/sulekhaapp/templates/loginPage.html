@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,6 +50,6 @@ Email:<input type="email" name="email1" ng-model="email" required>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
-<script src="loginPage.js"></script>
+<script src="{% static 'js/loginPage.js' %}"></script>
 </body>
 </html>
