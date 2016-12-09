@@ -18,7 +18,7 @@ def signup(request):
 			password = form.POST.get("password")
 			if 8<= len(password) <=16 and re.search(r'[a-z]',password) and re.search(r'[A-Z]',password) and re.search(r'[0-9]',password) :
 				
-				uploadData = Signup(first_Name = first_Name, last_Name= last_Name, dateOfBirth = DateOfBirth, gender = gender, email = email, userName = userName, password = password)
+				uploadData = Signup(first_Name = first_Name, last_Name= last_Name,  email = email, userName = userName, password = password)
 
 				uploadData = uploadData.save()
 				return render(request, "success.html")
@@ -37,11 +37,13 @@ def signup(request):
 	# 		 json.dump(displayData, home)
 
 
+
 def home(request):
 	return render(request, "home.html")
 
 def login(request):
 	return render(request,"loginPage.html")
 
-def register(request):
-	return HttpResponse("sds")
+def post(request):
+	return render(request,"post.html")
+
