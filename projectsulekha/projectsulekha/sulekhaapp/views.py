@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from django.core import serializers
-from .models import Signup
+from .models import SignUP
 import json
 
 # Create your views here.
@@ -28,6 +28,7 @@ def signup(request):
 				return HttpResponseRedirect ("/sulekha/signup/")
 
 		return render(request, "signup.html")
+	return render(request, "home.html")
 		
 	"""guidance for writing your data in JSON file""" 
 	# 	diaplayData =  (serializers.serialize('json',Signup.objects.all()))
@@ -35,16 +36,12 @@ def signup(request):
 	# 	with  open("home.json",'a') as test_file:
 	# 		 json.dump(displayData, home)
 
-		
-	
-<<<<<<< HEAD
-    
 
-=======
-<<<<<<< HEAD
-    
-=======
-    
+def home(request):
+	return render(request, "home.html")
 
->>>>>>> master
->>>>>>> rushika
+def login(request):
+	return render(request,"loginPage.html")
+
+def register(request):
+	return HttpResponse("sds")
