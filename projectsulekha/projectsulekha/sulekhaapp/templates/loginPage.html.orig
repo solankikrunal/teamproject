@@ -1,4 +1,5 @@
-
+<<<<<<< HEAD
+<<<<<<< HEAD
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
@@ -122,4 +123,7 @@ Email:<input type="email" name="email1" ng-model="email" required>
 </div></div></div></div>
 
 
-
+<<<<<<< HEAD
+>>>>>>> 34fd1394d0332108a6e573d10f695131d2aa0db2
+=======
+>>>>>>> 34fd1394d0332108a6e573d10f695131d2aa0db2
