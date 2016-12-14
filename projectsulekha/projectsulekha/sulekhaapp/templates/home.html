@@ -8,35 +8,21 @@
 	<title>Pro-Sulekha.com</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
 
-	
-    
 
-=======
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
->>>>>>> 34fd1394d0332108a6e573d10f695131d2aa0db2
+</head>
+
 </head>
 <body style="background: linear-gradient(-90deg, #f2f3f4,#a3bbe0); ">
 	
-<<<<<<< HEAD
-		<div class="row logohead1" >
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-				<img src="{% static 'Logos/logo.jpg' %}" class="imgstyle">
-=======
-=======
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
-</head>
-<body style="background: linear-gradient(-90deg, #f2f3f4,#a3bbe0); ">
-	
->>>>>>> 34fd1394d0332108a6e573d10f695131d2aa0db2
+
 		<div class="row logohead1" ng-controller="homeCtrl"  >
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-				<img src="Images/logo.jpg" class="imgstyle">
->>>>>>> 34fd1394d0332108a6e573d10f695131d2aa0db2
+				<img src="{% static 'Logos/logo.jpg' %}" class="imgstyle">
+
 			</div>
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
 				<p class="txt">Pro-Sulekha.com</p>
@@ -103,8 +89,7 @@
 						<p class="anim">Your search ends here...</p></div></div>
 		</div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		<div class="row logohead" style="margin-top: 10px;">
 					<div class="col-lg- col-md-1 col-sm-1 col-xs-4">
 					
@@ -139,26 +124,19 @@
 				</div>
 			</div>
 			<div ui-view></div>
-=======
+
+	
+		<div ui-view>
+
+		</div>
+
 	
 		<div ui-view>
 
 		</div>
 
 
-		
->>>>>>> 34fd1394d0332108a6e573d10f695131d2aa0db2
 
-=======
-	
-		<div ui-view>
-
-		</div>
-
-
-		
-
->>>>>>> 34fd1394d0332108a6e573d10f695131d2aa0db2
 		<div class="row logohead1" style="margin-top: 15px;" >
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
 				<img src="{% static 'Logos/logo.jpg' %}"  class="imgstyle">
@@ -184,8 +162,8 @@
 		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
-	<script type="text/javascript" src="js/home.js"></script>	
-	<script type="text/javascript" src="js/loginPage.js"></script>
-	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="{% static 'js/home.js' %}"></script>	
+	<script type="text/javascript" src="{% static 'js/loginPage.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/config.js' %}"></script>
 </body>
 </html>
