@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import SignUP
+from .models import Users
 
 # Register your models here.
 class SignupAdmin(admin.ModelAdmin):
 	list_display = ['first_name','last_name','email']
 	class Meta:
-		model = SignUP
+		model = Users
 
-admin.site.register(SignUP,SignupAdmin)
+admin.site.register(Users,SignupAdmin)
