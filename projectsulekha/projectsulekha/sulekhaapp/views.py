@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse,HttpResponseRedirect
 from django.http import HttpResponse,JsonResponse
 from django.core import serializers
 from .models import SignUP
@@ -37,16 +37,25 @@ def signup(request):
 	# 		 json.dump(displayData, home)
 
 def loginpost(request):
-	return render(request,"home.html")
+	name=request.GET.get("myName");
+	password=request.GET.get("myPass");
+	print name,password
+	request.session["username"]=name
+	return HttpResponseRedirect("/sulekha/home/")
 
 def home(request):
-	return render(request, "home.html")
+	name=request.session.get("username");
+	return render(request, "home.html",{"uname":name})
 
 def index(request):
 	return render(request, "index.html")
 
 def login(request):
 	return render(request,"loginPage.html")
+
+def logout(request):
+	del request.session['username']
+	return HttpResponseRedirect("/sulekha/home/")
 
 def post(request):
 	return render(request,"post.html")

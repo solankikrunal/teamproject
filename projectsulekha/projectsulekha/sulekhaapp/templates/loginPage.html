@@ -11,13 +11,13 @@
 
 
 <!-- <div class="container" style="text-align:center"> -->
-	<form name="myForm" method="GET" action="/data/">
+	<form name="myForm" method="GET" action="/sulekha/login">
 <label>UserName</label>
 <input name="myName" ng-model="firName" class="form-control"  placeholder="Enter UserName" required>
 <span ng-show="myForm.myName.$touched && myForm.myName.$invalid">User name is required.</span>
 <br>
 <label>Password</label>
-<input name="myName1" type="password" ng-model="lastName" class="form-control"  placeholder="Enter Password" required>
+<input name="myPass" type="password" ng-model="lastName" class="form-control"  placeholder="Enter Password" required>
 <span ng-show="myForm.myName1.$touched && myForm.myName1.$invalid">Password is required.</span>
 <br><br>
 <input type="submit" name="btn" value="LogIn">
