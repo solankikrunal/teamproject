@@ -36,10 +36,14 @@ def signup(request):
 	# 	with  open("home.json",'a') as test_file:
 	# 		 json.dump(displayData, home)
 
-
+def loginpost(request):
+	return render(request,"home.html")
 
 def home(request):
 	return render(request, "home.html")
+
+def index(request):
+	return render(request, "index.html")
 
 def login(request):
 	return render(request,"loginPage.html")

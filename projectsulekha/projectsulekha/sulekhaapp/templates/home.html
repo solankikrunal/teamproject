@@ -1,4 +1,5 @@
-{% load staticfiles %}
+{% load static %}
+
 <!DOCTYPE html>
 <html ng-app="prosulekha">
 <head>
@@ -8,21 +9,13 @@
 	<title>Pro-Sulekha.com</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
-
-
-</head>
-
 </head>
 <body style="background: linear-gradient(-90deg, #f2f3f4,#a3bbe0); ">
 	
-
 		<div class="row logohead1" ng-controller="homeCtrl"  >
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
 				<img src="{% static 'Logos/logo.jpg' %}" class="imgstyle">
-
 			</div>
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
 				<p class="txt">Pro-Sulekha.com</p>
@@ -36,11 +29,11 @@
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 				<i class="fa fa-user-plus fa-2x" style="margin-top: 15px;" aria-hidden="true"></i>
-				<button class="btn btn-info marg">Sign UP</button>
+				<button class="btn btn-info marg" ng-click='login()'>Sign UP</button>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
 				<i class="fa fa-upload fa-2x" style="margin-top: 15px;" aria-hidden="true"></i>
-				<button class="btn btn-info marg">Post Your Requirements</button>
+				<button class="btn btn-info marg" ng-click='post()'>Post Your Requirements</button>
 			</div>
 		</div>
 
@@ -89,57 +82,30 @@
 						<p class="anim">Your search ends here...</p></div></div>
 		</div>
 
-
-		<div class="row logohead" style="margin-top: 10px;">
-					<div class="col-lg- col-md-1 col-sm-1 col-xs-4">
-					
-					</div>
-
-					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
-						<img src="{% static 'Logos/rental-icon.png' %}">
-						Rentals
-					</div>
-					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-					</div>
-
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
-				<img src="{% static 'Logos/roommate-icon.png' %}">
-				Roommates
-				</div>
-				<div class="col-lg-4 col-md-1 col-sm-1 col-xs-4">
-				</div>
-
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
-				<img src="{% static 'Logos/daycare-icon.png' %}">
-				Day-Care
-				</div>
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-				</div>
-
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4 ic">
-				<img src="{% static 'Logos/local-service-icon.png' %}">
-				Services
-				</div>
-				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-				</div>
-			</div>
-			<div ui-view></div>
-
 	
 		<div ui-view>
+		
+		<!-- {% for i in showData %}
+			{{i.house_type}}
+			{{i.rooms}}
+			{{i.location}}
+			{{i.address}}
+			{{i.city}}
+			{{i.state}}
+			{{i.zipcode}}
+			{{i.images}}
+			{{i.details}}
 
-		</div>
-
-	
-		<div ui-view>
+		{% endfor %} -->
 
 		</div>
 
 
+		
 
 		<div class="row logohead1" style="margin-top: 15px;" >
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-4">
-				<img src="{% static 'Logos/logo.jpg' %}"  class="imgstyle">
+				<img src="{% static 'Logos/logo.jpg' %}" class="imgstyle">
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-1 col-xs-4">
 				<a href="#"  style="font-size: 25px;">About US</a>
