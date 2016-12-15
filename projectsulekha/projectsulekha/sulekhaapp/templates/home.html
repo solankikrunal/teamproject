@@ -10,6 +10,21 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU_WFbwvWpo2P7S1oV8Csgl0zHbwRwbAs&libraries=places" async defer></script>
+
+
+<script type="text/javascript">
+	function initialize() {
+
+var input = document.getElementById('searchTextField');
+var autocomplete = new google.maps.places.Autocomplete(input);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
 </head>
 <body style="background: linear-gradient(-90deg, #f2f3f4,#a3bbe0); ">
 	
@@ -88,7 +103,7 @@
 						<input type="text" class="ip" name="search" placeholder="Enter the keywords to search" >
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-1 col-xs-4">
-						<input type="text" class="ip" name="location" placeholder="Enter the location" >
+						<input type="text" class="ip" name="location" id="searchTextField" placeholder="Enter the location" >
 						<button class="btn btn-info " style="height:45px; ">Search</button>
 					</div>
 					<div class="col-lg-12 col-md-12"></div>
